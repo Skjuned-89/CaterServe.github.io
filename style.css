@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
 }
 
 .smooth {
@@ -38,6 +38,11 @@ header {
 nav {
     width: 100%;
     display: flex;
+    justify-content: space-between;
+}
+
+nav .largeNav {
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 20px 0px;
@@ -57,35 +62,71 @@ nav h1 span {
     font-size: 2.5rem;
 }
 
-nav ul {
+.largeNav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
-nav ul li:nth-child(1) a {
+.largeNav ul li:nth-child(1) a {
     color: #d4a762;
 }
 
-nav ul li a:hover {
+.largeNav ul li a:hover {
     color: #d4a762;
 }
 
-nav ul li a i {
+.largeNav ul li a i {
     font-size: 36px;
 }
 
-nav ul li a,
-nav ul li a i {
+.largeNav ul li a,
+.largeNav ul li a i {
     font-size: 17px;
     color: #0000008c;
     font-weight: 600;
     cursor: pointer;
 }
 
-nav ul li a:hover i {
+.largeNav ul li a:hover i {
     color: #d4a762;
+}
+
+.mediaNav {
+    width: 100%;
+    padding: 20px;
+}
+.mediaNavTop h1 ,.mediaNav h1 span{
+    font-size: 50px;
+}
+.menu i{
+    color: #aa864e;
+    font-size: 30px;
+}
+
+.mediaNav .menuContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+}
+.menuContent li a:hover{
+background-color: #aa864e;
+}
+.mediaNav .mediaNavTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.mediaNav .menuContent .mediaDropItems{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #FFFCF8;
+    border-radius: 10px;
 }
 
 .dropDown {
@@ -132,7 +173,7 @@ nav ul li a:hover i {
     color: white;
 }
 
-nav .navBtn {
+.largeNav .navBtn {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -174,7 +215,7 @@ main .heroSection {
     width: 100%;
     height: 100%;
     background-color: #FFFCF8;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .heroSection .container {
@@ -358,6 +399,7 @@ main .heroSection {
     width: 40%;
     height: 400px;
     background-image: url("https://themewagon.github.io/CaterServ/img/fact.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 10px;
@@ -847,7 +889,7 @@ main .heroSection {
     font-weight: 500;
     font-family: 'Playball', cursive;
     text-align: center;
-    padding: 20px 0
+    padding: 20px 0;
 }
 
 .buttomCards {
@@ -931,12 +973,336 @@ main .heroSection {
 .buttomCards ul li:hover .cardSocialMedia i {
     opacity: 1;
 }
-.buttomCards ul li:hover .nameOfCard{
+
+.buttomCards ul li:hover .nameOfCard {
     background-color: #D2A561;
 }
-.buttomCards ul li:hover .nameOfCard h3{
+
+.buttomCards ul li:hover .nameOfCard h3 {
     color: black;
 }
-.testimonialSection{
-    
+
+.testimonialSection {
+    width: 100%;
+    padding: 200px 0;
+}
+
+.testimonialTop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonialTop h2 {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Playball', cursive;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.testimonialSlider {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.testimonialSlider .swiper {
+    max-width: 1200px;
+}
+
+.testimonialSlider .swiper-wrapper {
+    width: 100%;
+    display: flex;
+    transition-timing-function: linear !important;
+}
+
+.swiper-wrapper .swiper-slide {
+    border: 1px solid #9a9a9a;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: #FFFCF8;
+}
+
+.swiper-wrapper .swiper-slide .sliderTop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: ltr;
+}
+
+.sliderTop img {
+    border-radius: 50%;
+}
+
+.sliderTop .sliderName h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.sliderTop .sliderName span {
+    font-size: 18px;
+    color: #00000060;
+}
+
+.sliderTop i {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #00000060;
+}
+
+.swiper-slide .sliderStar {
+    width: 100%;
+    direction: ltr;
+}
+
+.swiper-slide .sliderStar i {
+    margin-left: 1px;
+    color: #D2A561;
+
+}
+
+.swiper-slide .sliderDesc {
+    font-size: 20px;
+    color: #9a9a9a;
+    direction: ltr;
+}
+
+.ourBlogSection {
+    width: 100%;
+    padding-bottom: 200px;
+}
+
+.ourBlogSection .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blogTop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.blogTop h2 {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Playball', cursive;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.blogContent {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blogContent .blogCont {
+    width: 32%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.blogCont .blogImage {
+    width: 100%;
+    overflow: hidden;
+}
+
+.blogImage img {
+    width: 100%;
+    transform: scale(1);
+    transition: transform .3s ease;
+}
+
+.blogImage:hover img {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.blogImgCont {
+    width: 85%;
+    margin-inline: auto;
+    display: flex;
+    position: relative;
+    top: -50px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.blogImgCont span {
+    background-color: #D4A762;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    display: grid;
+    place-content: center;
+}
+
+.blogImgCont a {
+    padding: 20px 10px;
+    background-color: white;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.blogImgCont a:hover {
+    color: #aa864e;
+}
+
+footer {
+    width: 100%;
+}
+
+footer .footerTop {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.footerTop .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footerCard {
+    width: calc(100% / 4);
+}
+
+.container .card1 h2,
+.container .card1 span {
+    font-family: 'Playball', cursive;
+    font-size: 2.5rem;
+    color: #D2A561;
+    font-weight: 500;
+}
+
+.container .card1 span {
+    color: black;
+}
+
+.container .card1 p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #9a9a9a;
+    margin: 20px 0;
+}
+
+.card1 .footLogos {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.card1 .footLogos i {
+    width: 40px;
+    height: 40px;
+    background-color: #D2A561;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.card1 .footLogos i:hover {
+    background-color: black;
+    color: #D2A561;
+}
+
+.card2 h3,
+.card3 h3,
+.card4 h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card2 ul,
+.card3 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.card2 ul li,
+.card3 ul li {
+    color: #9a9a9a;
+    display: flex;
+    gap: 10px;
+}
+
+.card2 ul li i,
+.card3 ul li i {
+    color: #D2A561;
+    font-weight: 700;
+}
+
+.card4 h3 {
+    padding-left: 15px;
+}
+
+.card4 ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px 0;
+    gap: 10px;
+}
+
+.card4 ul li {
+    width: calc(90% / 3);
+    margin-inline: auto;
+}
+
+.card4 ul li img {
+    width: 100%;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid #aa864e;
+}
+
+.footerCopyright {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+.footerCopyright .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.copyLeft a,
+.copyRight a {
+    color: #D2A561;
+    text-decoration: underline;
+    margin: 0px 5px;
+}
+
+.copyLeft a:hover,
+.copyRight a:hover {
+    color: #aa864e;
 }
