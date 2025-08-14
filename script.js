@@ -1,4 +1,30 @@
+let mediaDrop = document.querySelector(".mediaNav .menuContent .mediaDropDown")
+let mediaDropItems = document.querySelector(".mediaNav .menuContent .mediaDropDown .mediaDropItems")
+let midStyle = mediaDropItems.style
+mediaDrop.addEventListener("click", () => {
+    if (midStyle.height == "0px") {
+        midStyle.height = "200px"
+        midStyle.padding = "20px 10px"
+        midStyle.marginTop = "10px"
+        midStyle.border = "1px solid #9a9a9a"
+    }
+    else {
+        midStyle.height = "0px"
+        midStyle.padding = "0px 0px"
+        midStyle.marginTop = "0px"
+        midStyle.border = "0px"
+    }
+})
 let menuButton = document.querySelectorAll(".menuButton button")
+let menu = document.querySelector(".menu")
+let menuContent = document.querySelector(".mediaNav .menuContent")
+menu.addEventListener("click", () => {
+    if (menuContent.style.height == "100%") {
+        menuContent.style.height = "0px"
+    } else {
+        menuContent.style.height = "100%"
+    }
+})
 let menuItems = document.querySelectorAll(".menuItems ul")
 menuButton.forEach((button, index) => {
     button.addEventListener("click", () => {
@@ -10,34 +36,52 @@ menuButton.forEach((button, index) => {
             else {
                 menuButton[i].classList.remove("menuButtonActive")
                 menuItems[i].classList.add("itemActive")
-
             }
         }
     });
 })
-let mediaDrop = document.querySelector(".mediaNav .menuContent .mediaDropDown")
-let mediaDropItems = document.querySelector(".mediaNav .menuContent .mediaDropDown .mediaDropItems")
-let midStyle=mediaDropItems.style
-mediaDrop.addEventListener("click", () => {
-    if (midStyle.height=="0px") {
-        midStyle.height="200px"
-        midStyle.padding="20px 10px"
-        midStyle.marginTop="10px"
-        midStyle.border="1px solid #9a9a9a"
+function checkActive(list) {
+    if (list.classList.contains('deactive')) {
+        list.classList.remove("deactive")
     }
-    else{
-        midStyle.height="0px"
-        midStyle.padding="0px 0px"
-        midStyle.marginTop="0px"
-        midStyle.border="0px"
-    }
-})
-let menu=document.querySelector(".menu")
-let menuContent=document.querySelector(".mediaNav .menuContent")
-menu.addEventListener("click",()=>{
-    if (menuContent.style.height=="100%") {
-        menuContent.style.height="0px"
+
+}
+function addActive(card, special) {
+    if (special == false) {
+        card.classList.add("active")
+        card.parentElement.style.justifyContent = "start";
+        card.parentElement.style.gap = "20px";
     } else {
-        menuContent.style.height="100%"
+        card.classList.add("active")
+        card.parentElement.style.justifyContent = "space-between";
+        card.parentElement.style.rowGap = "20px";
     }
+}
+let eventbtn = document.querySelectorAll(".eventButton button")
+eventbtn.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        eventbtn.forEach((allbts) => {
+
+            if (allbts == btn) {
+                btn.classList.remove("colorDeactive")
+                btn.classList.add("colorActive")
+            } else {
+                btn.classList.remove("colorActive")
+                btn.classList.add("colorDeactive")
+            }
+        })
+        for (let i = 0; i < 8; i++) {
+            if (btn.textContent.trim() == eventCards[i].firstElementChild.firstElementChild.textContent.trim()) {
+                checkActive(eventCards[i])
+                addActive(eventCards[i], false)
+            }
+            else if (btn.textContent.trim() == "All Events") {
+                checkActive(eventCards[i])
+                addActive(eventCards[i], true)
+            }
+            else {
+                eventCards[i].classList.add("deactive")
+            }
+        }
+    })
 })
