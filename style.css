@@ -12,7 +12,19 @@
 }
 
 .quickSmooth {
-    transition: all .3s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.active{
+    display: block;
+}
+.deactive{
+    display: none;
+}
+.eventBottom .eventButton .colorActive{
+    background-color: #D2A561;
+}
+.eventBottom .eventButton .colorDeactive{
+    background-color: #FFFCF8;
 }
 
 li {
@@ -239,7 +251,7 @@ main .heroSection {
 }
 
 .heroContent h1 {
-    font-size: 80px;
+    /* font-size: 80px; */
     font-family: 'Playball', cursive;
     font-weight: 400;
     margin: 30px 0;
@@ -469,6 +481,7 @@ main .heroSection {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 20px;
 }
 
 .serviceTop h2 {
@@ -802,8 +815,8 @@ main .heroSection {
 
 .bookUsSection .container img {
     width: 10%;
-    height: 550px;
     object-fit: cover;
+    object-position: center;
     opacity: .6;
 }
 
@@ -831,7 +844,6 @@ main .heroSection {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
 }
 
 .bookUsButtom select,
@@ -871,7 +883,7 @@ main .heroSection {
     color: #D2A561;
 }
 
-.ourTeamsection {
+.ourTeamSection {
     width: 100%;
 }
 
@@ -1177,6 +1189,9 @@ footer {
 footer .footerTop {
     width: 100%;
     padding: 50px 0;
+    position: relative;
+    z-index: 3;
+    background-color: #FFFCF8;
 }
 
 .footerTop .container {
