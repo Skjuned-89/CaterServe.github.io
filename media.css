@@ -1,20 +1,11 @@
+@media  screen and (width<300px) {
+
+}
 @media screen and (width<576px) {
-    .container {
+    /* .container {
         width: 100%;
         margin-inline: auto;
         padding: 0px 15px;
-    }
-
-    .mediaNav {
-        display: none;
-    }
-}
-
-@media screen and (width>=576px) {
-    .container {
-        width: 576px;
-        margin-inline: auto;
-        padding: 0px 25px;
     }
 
     .navBtn button {
@@ -96,6 +87,292 @@
     .buttomCards ul li {
         width: 48%;
     }
+
+    .blogContent {
+        justify-content: center;
+    }
+
+    .blogContent .blogCont {
+        width: 100%;
+    } */
+    .container {
+        width: 100%;
+        margin-inline: auto;
+        padding: 0px 25px;
+    }
+
+    .navBtn button {
+        display: none;
+    }
+
+    .mediaNav {
+        display: block;
+    }
+
+    .largeNav {
+        display: none;
+    }
+
+    .heroSection .container {
+        flex-direction: column;
+    }
+
+    .heroContent h1 {
+        font-size: 60px;
+    }
+    .herobtn{
+        flex-direction: column;
+    }
+    .heroSection .container .heroContent {
+        width: 100%;
+    }
+
+    .heroSection .container img {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .aboutUsSection .container {
+        flex-direction: column;
+    }
+
+    .aboutImage,
+    .aboutContent {
+        width: 100%;
+        margin-top: 50px;
+        padding-left: 0;
+    }
+
+    .aboutContent ul {
+        flex-direction: column;
+    }
+
+    .aboutContent ul li {
+        width: 100%;
+    }
+
+    .aboutUsDetailed .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .aboutDetailedCards {
+        flex-direction: column;
+        gap: 30px;
+        padding-right: 0;
+    }
+
+    .aboutDetailedCards .detailedCard {
+        width: 100%;
+    }
+
+    .aboutDetailedCards,
+    .playAbout {
+        width: 100%;
+    }
+
+    .serviceCard li {
+        width: 100%;
+    }
+
+    .eventBottom .eventButton,
+    .menuButton {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .eventImage li {
+        width: 100%;
+    }
+
+    .menuItems ul li {
+        width: 100%;
+    }
+
+    .buttomCards ul {
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 0;
+    }
+
+    .buttomCards ul li {
+        width: 100%;
+    }
+
+    .bookUsSection .container .bg {
+        width: 10%;
+
+    }
+
+    .bookUsSection .container .bookUs {
+        padding: 50px 0;
+    }
+
+    .bookUsButtom select,
+    .bookUsButtom input {
+        width: 100%;
+    }
+
+    .bookUsSection .container img {
+        height: 1020px;
+    }
+
+    .blogContent {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .blogContent .blogCont {
+        width: 47%;
+    }
+    .footerCard{
+        width: 100%;
+    }
+    .card4 ul{
+        width: 70%;
+    }
+
+}
+
+@media screen and (width>=576px) {
+    .container {
+        width: 100%;
+        margin-inline: auto;
+        padding: 0px 25px;
+    }
+
+    .navBtn button {
+        display: none;
+    }
+
+    .mediaNav {
+        display: block;
+    }
+
+    .largeNav {
+        display: none;
+    }
+
+    .heroSection .container {
+        flex-direction: column;
+        padding: 0px 50px;
+    }
+
+    .heroContent h1 {
+        font-size: 60px;
+    }
+
+    .heroSection .container .heroContent {
+        width: 100%;
+    }
+
+    .heroSection .container img {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .aboutUsSection .container {
+        flex-direction: column;
+    }
+
+    .aboutImage,
+    .aboutContent {
+        width: 100%;
+        margin-top: 50px;
+        padding-left: 0;
+    }
+
+    .aboutContent ul {
+        flex-direction: column;
+    }
+
+    .aboutContent ul li {
+        width: 100%;
+    }
+
+    .aboutUsDetailed .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .aboutDetailedCards {
+        flex-direction: column;
+        gap: 30px;
+        padding-right: 0;
+    }
+
+    .aboutDetailedCards .detailedCard {
+        width: 100%;
+    }
+
+    .aboutDetailedCards,
+    .playAbout {
+        width: 100%;
+    }
+
+    .serviceCard li {
+        width: 100%;
+    }
+
+    .eventBottom .eventButton,
+    .menuButton {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .eventImage li {
+        width: 100%;
+    }
+
+    .menuItems ul li {
+        width: 100%;
+    }
+
+    .buttomCards ul {
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 0;
+    }
+
+    .buttomCards ul li {
+        width: 100%;
+    }
+
+    .bookUsSection .container .bg {
+        width: 10%;
+
+    }
+
+    .bookUsSection .container .bookUs {
+        padding: 50px 0;
+    }
+
+    .bookUsButtom select,
+    .bookUsButtom input {
+        width: 100%;
+    }
+
+    .bookUsSection .container img {
+        height: 1020px;
+    }
+
+    .blogContent {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .blogContent .blogCont {
+        width: 47%;
+    }
+    .footerCard{
+        width: 100%;
+    }
+    .card4 ul{
+        width: 70%;
+    }
+
 }
 
 @media screen and (width>=768px) {
@@ -104,6 +381,44 @@
         margin-inline: auto;
         padding: 0px 25px;
     }
+
+    .aboutDetailedCards {
+        flex-direction: row;
+        gap: 30px;
+
+    }
+
+    .serviceCard li {
+        width: calc(95% / 2);
+    }
+
+    .eventImage li {
+        width: calc(95% / 2);
+    }
+
+    .bookUsSection .container .bookUs {
+        padding: 50px 0;
+    }
+
+    .bookUsButtom select,
+    .bookUsButtom input {
+        width: 48%;
+    }
+
+    .bookUsSection .container img {
+        height: 700px;
+    }
+
+    .buttomCards ul li {
+        width: 48%;
+    }
+    .footerCard {
+        width: calc(100% / 2);
+    }
+    .card4 ul{
+        width: 80%;
+    }
+
 }
 
 @media screen and (width>=1024px) {
@@ -126,6 +441,10 @@
         padding: 0px 50px;
     }
 
+    .heroContent h1 {
+        font-size: 70px;
+    }
+
     .heroSection .container .heroContent {
         width: 60%;
     }
@@ -136,6 +455,14 @@
 
     .aboutUsSection .container {
         flex-direction: row;
+    }
+
+    .aboutContent ul {
+        flex-direction: row;
+    }
+
+    .aboutContent ul li {
+        width: 50%;
     }
 
     .aboutImage {
@@ -155,6 +482,10 @@
         width: 60%;
     }
 
+    .aboutDetailedCards .detailedCard {
+        width: calc(90% / 3);
+    }
+
     .playAbout {
         width: 40%;
     }
@@ -163,11 +494,45 @@
     .eventImage li {
         width: calc(90% / 4);
     }
-    .menuItems ul li{
-        width:49%;
+
+    .menuItems ul li {
+        width: 49%;
     }
+
     .buttomCards ul li {
-        width: calc(95% /4 );
+        width: 48%;
+    }
+
+    .buttomCards ul li {
+        width: calc(95% /4);
+    }
+
+    .bookUsSection .container .bookUs {
+        padding: 50px 0;
+    }
+
+    .bookUsButtom select,
+    .bookUsButtom input {
+        width: 30%;
+    }
+
+    .bookUsSection .container img {
+        height: 600px;
+    }
+
+    .blogContent {
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+    .blogContent .blogCont {
+        width: 32%;
+    }
+    .footerCard {
+        width: calc(100% / 4);
+    }
+    .card4 ul{
+        width: 100%;
     }
 }
 
@@ -180,6 +545,10 @@
 
     .navBtn button {
         display: block;
+    }
+
+    .heroContent h1 {
+        font-size: 80px;
     }
 }
 
