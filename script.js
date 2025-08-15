@@ -56,17 +56,20 @@ function addActive(card, special) {
         card.parentElement.style.rowGap = "20px";
     }
 }
+let eventCards=document.querySelectorAll(".eventBottom ul li")
+console.log(eventCards)
 let eventbtn = document.querySelectorAll(".eventButton button")
+console.log(eventbtn)
 eventbtn.forEach((btn) => {
     btn.addEventListener("click", () => {
         eventbtn.forEach((allbts) => {
-
             if (allbts == btn) {
-                btn.classList.remove("colorDeactive")
-                btn.classList.add("colorActive")
+                allbts.classList.remove("colorDeactive")
+                allbts.classList.add("colorActive")
+
             } else {
-                btn.classList.remove("colorActive")
-                btn.classList.add("colorDeactive")
+                allbts.classList.remove("colorActive")
+                allbts.classList.add("colorDeactive")
             }
         })
         for (let i = 0; i < 8; i++) {
