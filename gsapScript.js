@@ -40,7 +40,7 @@ function detailcardAnimate(startValue) {
         }
     });
 }
-mm.add("(max-width: 576px)", () => animateCards("-50% 100%"));
+mm.add("(max-width: 576px)", () => detailcardAnimate("-50% 100%"));
 mm.add("(min-width: 577px) and (max-width: 1024px)", () => detailcardAnimate("-80% 100%"));
 mm.add("(min-width: 1025px)", () => detailcardAnimate("-100% 100%"));
 function animation(animatePlace, yValue, xValue, durationValue, triggerValue, startValue, scroll, stagger, scale) {
