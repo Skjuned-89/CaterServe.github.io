@@ -1,16 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playball&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans';
 }
-
 .smooth {
     transition: all 1s ease-in-out;
 }
-
 .quickSmooth {
     transition: all .5s ease-in-out;
 }
@@ -26,73 +23,58 @@
 .eventBottom .eventButton .colorDeactive{
     background-color: #FFFCF8;
 }
-
 li {
     list-style-type: none;
 }
-
 a {
     text-decoration: none;
     color: black;
 }
-
 body {
     width: 100%;
     height: 100%;
 }
-
 header {
     width: 100%;
     background-color: #FFFCF8;
-
 }
-
 nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-
 nav .largeNav {
     width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 20px 0px;
 }
-
 nav h1 {
     color: black;
 }
-
 nav h1 span {
     color: #d4a762;
 }
-
 nav h1,
 nav h1 span {
     font-family: 'Playball', cursive;
     font-size: 2.5rem;
 }
-
 .largeNav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
-
 .largeNav ul li:nth-child(1) a {
     color: #d4a762;
 }
-
 .largeNav ul li a:hover {
     color: #d4a762;
 }
-
 .largeNav ul li a i {
     font-size: 36px;
 }
-
 .largeNav ul li a,
 .largeNav ul li a i {
     font-size: 17px;
@@ -100,11 +82,9 @@ nav h1 span {
     font-weight: 600;
     cursor: pointer;
 }
-
 .largeNav ul li a:hover i {
     color: #d4a762;
 }
-
 .mediaNav {
     width: 100%;
     padding: 20px;
@@ -116,7 +96,6 @@ nav h1 span {
     color: #aa864e;
     font-size: 30px;
 }
-
 .mediaNav .menuContent {
     display: flex;
     flex-direction: column;
@@ -140,12 +119,10 @@ background-color: #aa864e;
     background-color: #FFFCF8;
     border-radius: 10px;
 }
-
 .dropDown {
     position: relative;
     color: #0000008c;
 }
-
 .dropDown .dropItems {
     position: absolute;
     top: 30px;
@@ -160,12 +137,10 @@ background-color: #aa864e;
     transform-origin: top center;
     transition-timing-function: ease-in-out;
 }
-
 .dropDown:hover .dropItems {
     transform: rotateX(0deg);
     transition-timing-function: ease-in-out;
 }
-
 .dropDown .dropItems .dropitem {
     padding: 8px 0px;
     padding-left: 15px;
@@ -174,23 +149,19 @@ background-color: #aa864e;
     cursor: pointer;
     font-size: 16px;
 }
-
 .dropDown .dropItems .dropitem:hover {
     background-color: #d4a762;
     color: white;
 }
-
 .dropDown .dropItems .dropActive {
     background-color: #d4a762;
     color: white;
 }
-
 .largeNav .navBtn {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-
 .navBtn i {
     width: 40px;
     height: 40px;
@@ -201,12 +172,10 @@ background-color: #aa864e;
     border-radius: 50%;
     cursor: pointer;
 }
-
 .navBtn i:hover {
     color: #d4a762;
     background-color: black;
 }
-
 .navBtn button {
     padding: 10px 25px;
     border: none;
@@ -217,29 +186,24 @@ background-color: #aa864e;
     border-radius: 25px;
     font-size: 16px;
 }
-
 .navBtn button:hover {
     color: #d4a762;
     background-color: black;
 }
-
 main .heroSection {
     width: 100%;
     height: 100%;
     background-color: #FFFCF8;
     padding: 50px 0;
 }
-
 .heroSection .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .heroSection .container .heroContent {
     width: 60%;
 }
-
 .note {
     width: max-content;
     font-size: 14px;
@@ -249,24 +213,19 @@ main .heroSection {
     border: 1px solid #d4a762;
     border-radius: 25px;
 }
-
 .heroContent h1 {
-    /* font-size: 80px; */
     font-family: 'Playball', cursive;
     font-weight: 400;
     margin: 30px 0;
 }
-
 .heroContent h1 span {
     font-family: 'Playball', cursive;
     color: #d4a762;
 }
-
 .heroContent .herobtn {
     display: flex;
     gap: 30px;
 }
-
 .herobtn button {
     background-color: #D2A561;
     font-size: 16px;
@@ -276,72 +235,59 @@ main .heroSection {
     padding: 15px 45px;
     cursor: pointer;
 }
-
 .herobtn button:hover {
     background-color: black;
     color: #D2A561;
 }
-
 .heroSection .container img {
     width: 40%;
 }
-
 .aboutUsSection {
     width: 100%;
     height: 100%;
     padding: 100px 0px;
 }
-
 .aboutUsSection .container {
     display: flex;
     align-items: center;
     padding-top: 100px;
 }
-
 .aboutImage {
     width: 40%;
     border-radius: 10px;
     overflow: hidden;
 }
-
 .aboutImage img {
     width: 100%;
 }
-
 .aboutContent {
     width: 60%;
     padding-left: 50px;
 }
-
 .aboutContent h2 {
     font-family: 'Playball', cursive;
     font-size: 45px;
     font-weight: 500;
     margin: 25px 0;
 }
-
 .aboutContent p {
     font-size: 16px;
     color: #0000008c;
     line-height: 25px;
 }
-
 .aboutContent ul {
     display: flex;
     flex-wrap: wrap;
     margin-top: 10px;
     color: #050709;
 }
-
 .aboutContent ul li {
     width: 50%;
     margin: 15px 0;
 }
-
 .aboutContent ul li i {
     color: #D2A561;
 }
-
 .aboutContent button {
     border: none;
     font-size: 16px;
@@ -352,24 +298,20 @@ main .heroSection {
     border-radius: 30px;
     cursor: pointer;
 }
-
 .aboutContent button:hover {
     background-color: #050709;
     color: #D2A561;
 }
-
 .aboutUsDetailed {
     width: 100%;
     height: 100%;
     padding: 100px 0px;
 }
-
 .aboutUsDetailed .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .aboutDetailedCards {
     width: 60%;
     height: 100%;
@@ -378,7 +320,6 @@ main .heroSection {
     align-items: center;
     padding-right: 30px;
 }
-
 .aboutDetailedCards .detailedCard {
     width: calc(90% / 3);
     display: flex;
@@ -389,24 +330,20 @@ main .heroSection {
     padding: 20px 0;
     border-radius: 20px;
 }
-
 .detailedCard i {
     font-size: 60px;
     margin-bottom: 30px;
     color: white;
 }
-
 .detailedCard h3 {
     font-size: 60px;
     font-family: 'Playball', cursive;
     margin-bottom: 5px;
 }
-
 .detailedCard p {
     text-transform: uppercase;
     font-weight: 500;
 }
-
 .playAbout {
     width: 40%;
     height: 400px;
@@ -421,7 +358,6 @@ main .heroSection {
     align-items: center;
     position: relative;
 }
-
 .playAbout .playIcon {
     width: 100px;
     height: 100px;
@@ -430,13 +366,11 @@ main .heroSection {
     display: grid;
     place-content: center;
 }
-
 .playIcon i {
     font-size: 40px;
     position: relative;
     z-index: 2;
 }
-
 .playAbout .aboutGlow {
     width: 100px;
     height: 100px;
@@ -445,37 +379,31 @@ main .heroSection {
     top: 37%;
     left: 39%;
     transform: translateX(-50px) translateY(-50px);
-
     border-radius: 50%;
     z-index: -1;
     animation: glow 1.5s ease-in-out infinite;
 }
-
 @keyframes glow {
     0% {
         transform: scale(1);
         opacity: 1;
     }
-
     100% {
         transform: scale(1.5);
         opacity: 0;
     }
 }
-
 .serviceSection {
     width: 100%;
     height: 100%;
     padding: 100px 0;
 }
-
 .serviceSection .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 .serviceTop {
     display: flex;
     justify-content: center;
@@ -483,14 +411,12 @@ main .heroSection {
     flex-direction: column;
     gap: 20px;
 }
-
 .serviceTop h2 {
     font-size: 50px;
     font-weight: 500;
     font-family: 'Playball', cursive;
     text-align: center;
 }
-
 .serviceCard {
     width: 100%;
     display: flex;
@@ -500,7 +426,6 @@ main .heroSection {
     gap: 30px;
     margin: 50px 0;
 }
-
 .serviceCard li {
     width: calc(90% / 4);
     height: 400px;
@@ -516,7 +441,6 @@ main .heroSection {
     border-radius: 10px;
     position: relative;
 }
-
 .serviceCard li .cardbg {
     width: 100%;
     height: 0%;
@@ -527,21 +451,17 @@ main .heroSection {
     z-index: -1;
     border-radius: 10px;
 }
-
 .serviceCard li i {
     font-size: 7em;
     color: #D2A561;
 }
-
 .serviceCard li h3 {
     font-size: 1.5rem;
     font-weight: 500;
 }
-
 .serviceCard li p {
     color: #00000060;
 }
-
 .serviceCard li button {
     padding: 10px 25px;
     font-size: 16px;
@@ -552,47 +472,38 @@ main .heroSection {
     background-color: #D2A561;
     cursor: pointer;
 }
-
 .serviceCard li:hover .cardbg {
     height: 100%;
 }
-
 .serviceCard li:hover i {
     color: black;
 }
-
 .serviceCard li:hover p {
     color: white;
 }
-
 .serviceCard li:hover button {
     background-color: #fff;
 }
-
 .serviceCard li button:hover {
     background-color: black;
     color: white;
 }
-
 .eventSection {
     width: 100%;
     height: 100%;
     padding: 100px 0;
 }
-
 .eventSection .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 .eventTop {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .eventTop h2 {
     font-size: 50px;
     font-weight: 500;
@@ -600,7 +511,6 @@ main .heroSection {
     text-align: center;
     padding: 10px 0;
 }
-
 .eventBottom {
     width: 100%;
     height: 100%;
@@ -608,7 +518,6 @@ main .heroSection {
     flex-direction: column;
     margin: 50px 0;
 }
-
 .eventBottom .eventButton {
     width: 100%;
     display: flex;
@@ -617,7 +526,6 @@ main .heroSection {
     padding: 0px 50px;
 
 }
-
 .eventButton button {
     background-color: #FFFCF8;
     padding: 8px 40px;
@@ -627,7 +535,6 @@ main .heroSection {
     font-weight: 500;
     color: #000000c2;
 }
-
 .eventImage {
     width: 100%;
     display: flex;
@@ -637,14 +544,12 @@ main .heroSection {
     margin: 50px 0;
     row-gap: 20px;
 }
-
 .eventImage li {
     width: calc(95% / 4);
     height: 100%;
     position: relative;
 
 }
-
 .eventImage li .eventHoverBox {
     width: 100%;
     height: 98%;
@@ -656,8 +561,6 @@ main .heroSection {
     background-color: #d2a561a9;
     opacity: 0;
 }
-
-
 .eventHoverBox h3 {
     position: absolute;
     top: 10px;
@@ -665,32 +568,26 @@ main .heroSection {
     font-size: 24px;
     font-weight: 600;
 }
-
 .eventHoverBox i {
     font-size: 30px;
     font-weight: 600;
 }
-
 .eventImage li img {
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
     cursor: pointer;
 }
-
 .eventImage li:hover .eventHoverBox {
     opacity: 1;
 }
-
 .menuSection {
     width: 100%;
     height: 100%;
 }
-
 .menuButton .menuButtonActive {
     background-color: #D2A561;
 }
-
 .menuSection .container {
     width: 100%;
     height: 100%;
@@ -698,13 +595,11 @@ main .heroSection {
     align-items: center;
     flex-direction: column;
 }
-
 .menuTop {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .menuTop h2 {
     font-size: 50px;
     font-weight: 500;
@@ -712,7 +607,6 @@ main .heroSection {
     text-align: center;
     padding: 10px 0;
 }
-
 .menuButton {
     width: 100%;
     display: flex;
@@ -721,7 +615,6 @@ main .heroSection {
     margin: 25px 0;
     padding: 0px 30px;
 }
-
 .menuButton button {
     background-color: #FFFCF8;
     padding: 8px 40px;
@@ -732,15 +625,12 @@ main .heroSection {
     color: #000000c2;
     cursor: pointer;
 }
-
 .menuItems {
     width: 100%;
 }
-
 .menuItems .itemActive {
     display: none;
 }
-
 .menuItems ul {
     width: 100%;
     display: flex;
@@ -749,62 +639,51 @@ main .heroSection {
     row-gap: 30px;
     padding: 50px 0;
 }
-
 .menuItems ul li {
     width: 49%;
     display: flex;
 }
-
 .menuItem {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-
 .menuItem img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
-
 .menuItem .menuText {
     width: 78%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
 .menuText .nameprice {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-
 .nameprice h4 {
     font-size: 24px;
     font-weight: 500;
     text-transform: capitalize;
 }
-
 .nameprice span {
     font-size: 26px;
     font-weight: 600;
     color: #D2A561;
 }
-
 .menuText hr {
     border-color: #d4a66258;
 }
-
 .menuDesc {
     color: #00000060;
 }
-
 .bookUsSection {
     width: 100%;
     padding: 100px 0;
 }
-
 .bookUsSection .container {
     display: flex;
     justify-content: center;
@@ -813,18 +692,15 @@ main .heroSection {
     padding: 0px 0px;
     border-radius: 10px;
 }
-
 .bookUsSection .container img {
     width: 10%;
     object-fit: cover;
     object-position: center;
     opacity: .6;
 }
-
 .bookUsSection .container .bookUs {
     width: 90%;
 }
-
 .bookUs .bookUSTop {
     display: flex;
     flex-direction: column;
@@ -832,7 +708,6 @@ main .heroSection {
     align-items: center;
     padding: 30px 0;
 }
-
 .bookUs .bookUSTop h2 {
     font-size: 50px;
     font-weight: 500;
@@ -840,13 +715,11 @@ main .heroSection {
     text-align: center;
     padding: 20px 0;
 }
-
 .bookUs .bookUsButtom {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
-
 .bookUsButtom select,
 .bookUsButtom input {
     width: 30%;
@@ -856,19 +729,16 @@ main .heroSection {
     border-radius: 10px;
     border: 1px solid #D2A561;
 }
-
 .bookUsButtom input:focus,
 .bookUsButtom select:focus {
     box-shadow: 0 0 5px 2px #D2A561;
     outline: none;
 }
-
 .bookUsButtom .button {
     width: 100%;
     display: grid;
     place-content: center;
 }
-
 .bookUsButtom .button button {
     padding: 15px 40px;
     border-radius: 30px;
@@ -878,16 +748,13 @@ main .heroSection {
     background-color: #D2A561;
     border: none;
 }
-
 .bookUsButtom .button button:hover {
     background-color: black;
     color: #D2A561;
 }
-
 .ourTeamSection {
     width: 100%;
 }
-
 .ourTeamSection .container .teamHeader {
     width: 100%;
     display: flex;
@@ -896,7 +763,6 @@ main .heroSection {
     flex-direction: column;
     padding-bottom: 30px;
 }
-
 .teamHeader h2 {
     font-size: 50px;
     font-weight: 500;
@@ -904,30 +770,25 @@ main .heroSection {
     text-align: center;
     padding: 20px 0;
 }
-
 .buttomCards {
     width: 100%;
 }
-
 .buttomCards ul {
     display: flex;
     justify-content: space-between;
     width: 100%;
     gap: 30px;
 }
-
 .buttomCards ul li {
     width: 25%;
     position: relative;
 }
-
 .buttomCards ul li img {
     width: 100%;
     object-fit: cover;
     object-position: center center;
     border-radius: 10px 10px 0px 0px;
 }
-
 .buttomCards .nameOfCard {
     width: 100%;
     display: flex;
@@ -941,18 +802,15 @@ main .heroSection {
     border-radius: 0px 0px 10px 10px;
     gap: 10px;
 }
-
 .buttomCards .nameOfCard h3 {
     font-size: 25px;
     color: #D2A561;
     font-weight: 600;
 }
-
 .buttomCards .nameOfCard span {
     font-size: 18px;
     color: white;
 }
-
 .buttomCards .cardSocialMedia {
     position: absolute;
     top: 10px;
@@ -962,7 +820,6 @@ main .heroSection {
     flex-direction: column;
     gap: 10px;
 }
-
 .buttomCards .cardSocialMedia i {
     font-size: 16px;
     background-color: #D2A561;
@@ -973,33 +830,26 @@ main .heroSection {
     place-content: center;
     border-radius: 50%;
 }
-
 .buttomCards .cardSocialMedia i:hover {
     background-color: black;
     color: #D2A561;
 }
-
 .buttomCards .cardSocialMedia i:nth-child(1) {
     opacity: 1;
 }
-
 .buttomCards ul li:hover .cardSocialMedia i {
     opacity: 1;
 }
-
 .buttomCards ul li:hover .nameOfCard {
     background-color: #D2A561;
 }
-
 .buttomCards ul li:hover .nameOfCard h3 {
     color: black;
 }
-
 .testimonialSection {
     width: 100%;
     padding: 200px 0;
 }
-
 .testimonialTop {
     width: 100%;
     display: flex;
@@ -1007,7 +857,6 @@ main .heroSection {
     align-items: center;
     flex-direction: column;
 }
-
 .testimonialTop h2 {
     font-size: 50px;
     font-weight: 500;
@@ -1015,7 +864,6 @@ main .heroSection {
     text-align: center;
     padding: 20px 0;
 }
-
 .testimonialSlider {
     width: 100%;
     overflow: hidden;
@@ -1024,17 +872,14 @@ main .heroSection {
     gap: 30px;
     margin-top: 50px;
 }
-
 .testimonialSlider .swiper {
     max-width: 1200px;
 }
-
 .testimonialSlider .swiper-wrapper {
     width: 100%;
     display: flex;
     transition-timing-function: linear !important;
 }
-
 .swiper-wrapper .swiper-slide {
     border: 1px solid #9a9a9a;
     width: 600px;
@@ -1047,7 +892,6 @@ main .heroSection {
     border-radius: 10px;
     background-color: #FFFCF8;
 }
-
 .swiper-wrapper .swiper-slide .sliderTop {
     width: 100%;
     display: flex;
@@ -1055,55 +899,44 @@ main .heroSection {
     align-items: center;
     direction: ltr;
 }
-
 .sliderTop img {
     border-radius: 50%;
 }
-
 .sliderTop .sliderName h3 {
     font-size: 25px;
     font-weight: 600;
 }
-
 .sliderTop .sliderName span {
     font-size: 18px;
     color: #00000060;
 }
-
 .sliderTop i {
     font-size: 40px;
     margin-bottom: 40px;
     color: #00000060;
 }
-
 .swiper-slide .sliderStar {
     width: 100%;
     direction: ltr;
 }
-
 .swiper-slide .sliderStar i {
     margin-left: 1px;
     color: #D2A561;
-
 }
-
 .swiper-slide .sliderDesc {
     font-size: 20px;
     color: #9a9a9a;
     direction: ltr;
 }
-
 .ourBlogSection {
     width: 100%;
     padding-bottom: 200px;
 }
-
 .ourBlogSection .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 .blogTop {
     width: 100%;
     display: flex;
@@ -1112,7 +945,6 @@ main .heroSection {
     align-items: center;
     padding-bottom: 50px;
 }
-
 .blogTop h2 {
     font-size: 50px;
     font-weight: 500;
@@ -1120,7 +952,6 @@ main .heroSection {
     text-align: center;
     padding: 20px 0;
 }
-
 .blogContent {
     width: 100%;
     display: flex;
@@ -1128,29 +959,24 @@ main .heroSection {
     justify-content: space-between;
     align-items: center;
 }
-
 .blogContent .blogCont {
     width: 32%;
     border-radius: 10px;
     overflow: hidden;
 }
-
 .blogCont .blogImage {
     width: 100%;
     overflow: hidden;
 }
-
 .blogImage img {
     width: 100%;
     transform: scale(1);
     transition: transform .3s ease;
 }
-
 .blogImage:hover img {
     cursor: pointer;
     transform: scale(1.2);
 }
-
 .blogImgCont {
     width: 85%;
     margin-inline: auto;
@@ -1160,7 +986,6 @@ main .heroSection {
     border-radius: 10px;
     overflow: hidden;
 }
-
 .blogImgCont span {
     background-color: #D4A762;
     padding: 20px;
@@ -1170,7 +995,6 @@ main .heroSection {
     display: grid;
     place-content: center;
 }
-
 .blogImgCont a {
     padding: 20px 10px;
     background-color: white;
@@ -1178,15 +1002,12 @@ main .heroSection {
     line-height: 30px;
     font-weight: 600;
 }
-
 .blogImgCont a:hover {
     color: #aa864e;
 }
-
 footer {
     width: 100%;
 }
-
 footer .footerTop {
     width: 100%;
     padding: 50px 0;
@@ -1194,17 +1015,14 @@ footer .footerTop {
     z-index: 3;
     background-color: #FFFCF8;
 }
-
 .footerTop .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-
 .footerCard {
     width: calc(100% / 4);
 }
-
 .container .card1 h2,
 .container .card1 span {
     font-family: 'Playball', cursive;
@@ -1212,24 +1030,20 @@ footer .footerTop {
     color: #D2A561;
     font-weight: 500;
 }
-
 .container .card1 span {
     color: black;
 }
-
 .container .card1 p {
     font-size: 16px;
     line-height: 30px;
     color: #9a9a9a;
     margin: 20px 0;
 }
-
 .card1 .footLogos {
     width: 100%;
     display: flex;
     gap: 10px;
 }
-
 .card1 .footLogos i {
     width: 40px;
     height: 40px;
@@ -1239,19 +1053,16 @@ footer .footerTop {
     align-items: center;
     border-radius: 50%;
 }
-
 .card1 .footLogos i:hover {
     background-color: black;
     color: #D2A561;
 }
-
 .card2 h3,
 .card3 h3,
 .card4 h3 {
     font-size: 24px;
     font-weight: 600;
 }
-
 .card2 ul,
 .card3 ul {
     display: flex;
@@ -1259,24 +1070,20 @@ footer .footerTop {
     gap: 15px;
     margin: 25px 0;
 }
-
 .card2 ul li,
 .card3 ul li {
     color: #9a9a9a;
     display: flex;
     gap: 10px;
 }
-
 .card2 ul li i,
 .card3 ul li i {
     color: #D2A561;
     font-weight: 700;
 }
-
 .card4 h3 {
     padding-left: 15px;
 }
-
 .card4 ul {
     width: 100%;
     display: flex;
@@ -1285,39 +1092,33 @@ footer .footerTop {
     margin: 15px 0;
     gap: 10px;
 }
-
 .card4 ul li {
     width: calc(90% / 3);
     margin-inline: auto;
 }
-
 .card4 ul li img {
     width: 100%;
     border-radius: 50%;
     padding: 10px;
     border: 1px solid #aa864e;
 }
-
 .footerCopyright {
     width: 100%;
     background-color: black;
     color: white;
     padding: 20px 0;
 }
-
 .footerCopyright .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 .copyLeft a,
 .copyRight a {
     color: #D2A561;
     text-decoration: underline;
     margin: 0px 5px;
 }
-
 .copyLeft a:hover,
 .copyRight a:hover {
     color: #aa864e;
