@@ -44,7 +44,6 @@ function checkActive(list) {
     if (list.classList.contains('deactive')) {
         list.classList.remove("deactive")
     }
-
 }
 function addActive(card, special) {
     if (special == false) {
