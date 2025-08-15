@@ -102,7 +102,9 @@ animateForEach(".ourTeamSection .buttomCards ul li","top 150%")
 animateForEach(".swiper","top 160%")
 animateForEach(".blogCont","top 160%")
 animateForEach(".serviceCard li","top 150%")
+
 let menuItms = document.querySelectorAll(".menuItems ul")
+let menuBtn = document.querySelectorAll(".menuButton button")
 menuBtn.forEach((button, index) => {
     let mnCard;
     button.addEventListener("click", () => {
