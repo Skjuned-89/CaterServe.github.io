@@ -71,14 +71,15 @@ animation(".herobtn", null, -500, 1.5, null, null, false, false, false)
 animation("header", null, null, 2, null, null, false, false, false)
 animation(".aboutImage,.aboutContent", 500, null, 1.5, ".aboutUsSection", "top 40%", true, true, false)
 animation(".playAbout", 500, null, 1.5, ".playAbout", "top 130%", true, true, false)
-animation(".eventTop,.eventButton", 500, null, 1.5, ".eventButton", "top 210%", true, true, false)
-animation(".menuTop,.menuButton", 500, null, 1.5, ".menuButton", "top 210%", true, true, false)
 animation(".bookUsSection .container", 500, null, 1.5, ".bookUsSection .container", "top 150%", true, false, false)
 animation(".teamHeader", 500, null, 1.5, ".teamHeader", "top 150%", true, false, false)
 animation(".testimonialTop", 500, null, 1.5, ".testimonialTop", "top 150%", true, false, false)
 animation(".serviceTop", 500, null, 1.5, ".serviceTop", "top 140%", true, false, false)
 animation(".blogTop", 500, null, 1.5, ".blogTop", "top 150%", true, false, false)
 animation(".footerTop", 500, null, 1.5, ".footerTop", "top 150%", true, false, false)
+animation(".menuTop,.menuButton", 500, null, 1.5, ".menuButton", "top 210%", true, true, false)
+animation(".eventTop,.eventButton", 500, null, 1.5, ".eventButton", "top 210%", true, true, false)
+
 function animateForEach(animateCard,startValue){
     let cards = document.querySelectorAll(animateCard);
     cards.forEach((card,index)=>{
@@ -97,11 +98,16 @@ function animateForEach(animateCard,startValue){
     })
 }
 animateForEach(".menuItems .starter li","top 200%")
-animateForEach(".eventImage li","top 200%")
 animateForEach(".ourTeamSection .buttomCards ul li","top 150%")
 animateForEach(".swiper","top 160%")
 animateForEach(".blogCont","top 160%")
 animateForEach(".serviceCard li","top 150%")
+mm.add("(min-width:1025px)",()=>{
+    animateForEach(".eventImage li","top 200%")
+})
+mm.add("(max-width:1024px)",()=>{
+    animation(".eventImage",500,null,1.5,".eventImage","top 160%",true,false,false)
+})
 
 let menuItms = document.querySelectorAll(".menuItems ul")
 let menuBtn = document.querySelectorAll(".menuButton button")
