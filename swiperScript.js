@@ -9,19 +9,5 @@ const swiper = new Swiper('.swiper', {
     speed: 10000,
     allowTouchMove: true,
     pagination: false,
-    slidesPerView: 1,
-    breakpoints: {
-        0: {
-            slidesPerView: 1
-        },
-        575: {
-            slidesPerView: 1
-        },
-        767: {
-            slidesPerView: 2
-        },
-        991: {
-            slidesPerView: 3
-        }
-    }
+    slidesPerView: 3
 });
