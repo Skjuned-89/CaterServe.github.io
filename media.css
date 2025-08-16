@@ -281,6 +281,7 @@
     }
     .heroSection .container img {
         width: 40%;
+        margin-top: 0px;
     }
     .aboutUsSection .container {
         flex-direction: row;
@@ -316,9 +317,6 @@
     }
     .menuItems ul li {
         width: 49%;
-    }
-    .buttomCards ul li {
-        width: 48%;
     }
     .buttomCards ul li {
         width: calc(95% /4);
