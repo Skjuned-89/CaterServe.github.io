@@ -201,9 +201,6 @@ main .heroSection {
     justify-content: space-between;
     align-items: center;
 }
-.heroSection .container .heroContent {
-    width: 60%;
-}
 .note {
     width: max-content;
     font-size: 14px;
@@ -239,9 +236,6 @@ main .heroSection {
     background-color: black;
     color: #D2A561;
 }
-.heroSection .container img {
-    width: 40%;
-}
 .aboutUsSection {
     width: 100%;
     height: 100%;
@@ -253,16 +247,11 @@ main .heroSection {
     padding-top: 100px;
 }
 .aboutImage {
-    width: 40%;
     border-radius: 10px;
     overflow: hidden;
 }
 .aboutImage img {
     width: 100%;
-}
-.aboutContent {
-    width: 60%;
-    padding-left: 50px;
 }
 .aboutContent h2 {
     font-family: 'Playball', cursive;
@@ -282,7 +271,6 @@ main .heroSection {
     color: #050709;
 }
 .aboutContent ul li {
-    width: 50%;
     margin: 15px 0;
 }
 .aboutContent ul li i {
@@ -313,15 +301,12 @@ main .heroSection {
     align-items: center;
 }
 .aboutDetailedCards {
-    width: 60%;
-    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 30px;
 }
 .aboutDetailedCards .detailedCard {
-    width: calc(90% / 3);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -345,7 +330,6 @@ main .heroSection {
     font-weight: 500;
 }
 .playAbout {
-    width: 40%;
     height: 400px;
     background-image: url("https://themewagon.github.io/CaterServ/img/fact.jpg");
     background-size: cover;
@@ -356,7 +340,6 @@ main .heroSection {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 .playAbout .playIcon {
     width: 100px;
@@ -365,6 +348,7 @@ main .heroSection {
     background-color: white;
     display: grid;
     place-content: center;
+    position: relative;
 }
 .playIcon i {
     font-size: 40px;
@@ -376,8 +360,9 @@ main .heroSection {
     height: 100px;
     background-color: #d4a762;
     position: absolute;
-    top: 37%;
-    left: 39%;
+    top: 0;
+
+    left: 0;
     transform: translateX(-50px) translateY(-50px);
     border-radius: 50%;
     z-index: -1;
@@ -427,7 +412,6 @@ main .heroSection {
     margin: 50px 0;
 }
 .serviceCard li {
-    width: calc(90% / 4);
     height: 400px;
     display: flex;
     justify-content: center;
@@ -524,7 +508,6 @@ main .heroSection {
     justify-content: space-around;
     align-items: center;
     padding: 0px 50px;
-
 }
 .eventButton button {
     background-color: #FFFCF8;
@@ -545,10 +528,8 @@ main .heroSection {
     row-gap: 20px;
 }
 .eventImage li {
-    width: calc(95% / 4);
     height: 100%;
     position: relative;
-
 }
 .eventImage li .eventHoverBox {
     width: 100%;
@@ -640,7 +621,6 @@ main .heroSection {
     padding: 50px 0;
 }
 .menuItems ul li {
-    width: 49%;
     display: flex;
 }
 .menuItem {
@@ -722,7 +702,6 @@ main .heroSection {
 }
 .bookUsButtom select,
 .bookUsButtom input {
-    width: 30%;
     padding: 10px 20px;
     font-size: 16px;
     color: #00000060;
@@ -780,7 +759,6 @@ main .heroSection {
     gap: 30px;
 }
 .buttomCards ul li {
-    width: 25%;
     position: relative;
 }
 .buttomCards ul li img {
@@ -956,11 +934,9 @@ main .heroSection {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
 }
 .blogContent .blogCont {
-    width: 32%;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -1019,9 +995,6 @@ footer .footerTop {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-.footerCard {
-    width: calc(100% / 4);
 }
 .container .card1 h2,
 .container .card1 span {
@@ -1085,7 +1058,6 @@ footer .footerTop {
     padding-left: 15px;
 }
 .card4 ul {
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
