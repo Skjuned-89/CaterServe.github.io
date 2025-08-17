@@ -37,6 +37,8 @@ body {
 header {
     width: 100%;
     background-color: #FFFCF8;
+    position: relative;
+    z-index: 5;
 }
 nav {
     width: 100%;
@@ -69,14 +71,15 @@ nav h1 span {
 .largeNav ul li:nth-child(1) a {
     color: #d4a762;
 }
-.largeNav ul li a:hover {
+.largeNav ul li>a:hover {
     color: #d4a762;
 }
 .largeNav ul li a i {
     font-size: 36px;
 }
 .largeNav ul li a,
-.largeNav ul li a i {
+.largeNav ul li a i,
+.largeNav ul li {
     font-size: 17px;
     color: #0000008c;
     font-weight: 600;
@@ -127,7 +130,7 @@ background-color: #aa864e;
     position: absolute;
     top: 30px;
     padding: 5px 0;
-    color: black;
+    color: #000000ac;
     background-color: #fff;
     border: 1px solid #d4a762;
     border-radius: 5px;
@@ -136,12 +139,19 @@ background-color: #aa864e;
     transform: rotateX(90deg);
     transform-origin: top center;
     transition-timing-function: ease-in-out;
+    z-index: 10;
 }
 .dropDown:hover .dropItems {
     transform: rotateX(0deg);
     transition-timing-function: ease-in-out;
+    position: absolute;
+    z-index: 10;
+}
+.dropDown .dropItems .dropitem{
+    width: fit-content;
 }
 .dropDown .dropItems .dropitem {
+    width: 100%;
     padding: 8px 0px;
     padding-left: 15px;
     padding-right: 60px;
@@ -151,6 +161,9 @@ background-color: #aa864e;
 }
 .dropDown .dropItems .dropitem:hover {
     background-color: #d4a762;
+    color: white;
+}
+.dropDown .dropItems .dropitem:hover a{
     color: white;
 }
 .dropDown .dropItems .dropActive {
