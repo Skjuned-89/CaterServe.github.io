@@ -79,6 +79,7 @@ animation(".blogTop", 500, null, 1.5, ".blogTop", "top 150%", true, false, false
 animation(".footerTop", 500, null, 1.5, ".footerTop", "top 150%", true, false, false)
 animation(".menuTop,.menuButton", 500, null, 1.5, ".menuButton", "top 210%", true, true, false)
 animation(".eventTop,.eventButton", 500, null, 1.5, ".eventButton", "top 210%", true, true, false)
+animation(".mainTop", -500, null, 1.5, ".maintop", "top 100%", true, false, false)
 
 function animateForEach(animateCard,startValue){
     let cards = document.querySelectorAll(animateCard);
